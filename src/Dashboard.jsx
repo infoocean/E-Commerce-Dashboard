@@ -34,6 +34,8 @@ import {
 import { IconType } from 'react-icons';
 import { Link } from 'react-router-dom';
 
+import {Routes, Route} from "react-router-dom";
+
 
 const SideBarLinkItems = [
   { 
@@ -52,7 +54,8 @@ const SideBarLinkItems = [
   },
   { 
     name: 'Favourites',
-    icon: FiStar 
+    icon: FiStar ,
+    path:"features"
   },
   { 
     name: 'Settings',
@@ -60,14 +63,12 @@ const SideBarLinkItems = [
   },
 ];
 
-export default function SidebarWithHeader({
-  children,
-}: {
-  children: ReactNode;
-}) {
+export default function SidebarWithHeader(){
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box minH="100vh" bg={useColorModeValue('gray.100', 'gray.900')}>
+
+      {/*sidebar data component */}
       <SidebarContent
         onClose={() => onClose}
         display={{ base: 'none', md: 'block' }}
@@ -86,17 +87,23 @@ export default function SidebarWithHeader({
       </Drawer>
       {/* mobilenav */}
       <MobileNav onOpen={onOpen} />
+      {/*main data component*/}
       <Box ml={{ base: 0, md: 60 }} p="4">
-        {children}
+        
+        {/*main data part */}
+         
+        hii
+
+
       </Box>
     </Box>
   );
 }
+  
 
 interface SidebarProps extends BoxProps {
   onClose: () => void;
 }
-
 const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   return (
     <Box
