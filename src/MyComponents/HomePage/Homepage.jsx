@@ -1,4 +1,5 @@
 import React from "react";
+import AreaChart from "./HomePageComp/AreaChart";
 import Headercard from "./HomePageComp/Headercard";
 import HeaderSearchOption from "./HomePageComp/Headersearchoption";
 import OrdersetSec  from "./HomePageComp/OrderDetSec";
@@ -11,6 +12,7 @@ function Homepage() {
     <Headercard/>
     <OrdersetSec/>
     <PopularDetailsSec/>
+    <AreaChart/>
     </>
   );
 }
