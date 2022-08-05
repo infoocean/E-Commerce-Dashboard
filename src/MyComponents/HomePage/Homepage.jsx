@@ -9,7 +9,7 @@ import PopularDetailsSec from "./HomePageComp/Popularproduct";
 function Homepage() {
   return (
     <>
-    <HeaderSearchOption/>
+    <HeaderSearchOption title = "Home"/>
     <Headercard/>
     <OrdersetSec/>
     <PopularDetailsSec/>

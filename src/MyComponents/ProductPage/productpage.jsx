@@ -1,9 +1,12 @@
 import React from "react";
+import HeaderSearchOption from "../HomePage/HomePageComp/Headersearchoption";
+import ProductOperation from "./ProductPageComp/ProductOperation";
 
 function MyProductPage() {
   return (
     <>
-    Product
+    <HeaderSearchOption title = "Product"/>
+    <ProductOperation/>
     </>
   );
 }

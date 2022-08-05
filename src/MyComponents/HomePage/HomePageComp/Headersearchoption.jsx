@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, Container, Flex, Spacer, Box, Select } from "@chakra-ui/react";
 
-export default function HeaderSearchOption() {
+export default function HeaderSearchOption(props) {
   return (
     <Container mt={2} mb={5} maxW="6xl">
       <Flex>
@@ -10,7 +10,7 @@ export default function HeaderSearchOption() {
             fontSize={{ base: "1xl", sm: "2xl", md: "2xl" }}
             fontWeight="800"
           >
-            Home
+            {props.title}
           </Text>
         </Box>
         <Spacer />
