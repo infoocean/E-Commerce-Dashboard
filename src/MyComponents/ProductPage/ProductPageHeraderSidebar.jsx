@@ -33,7 +33,8 @@ import {
 } from 'react-icons/fi';
 import { IconType } from 'react-icons';
 import { Link } from 'react-router-dom';
-import Homepage from './MyComponents/HomePage/Homepage';
+import MyProductPage from './productpage';
+
 
 const SideBarLinkItems = [
   { 
@@ -42,8 +43,8 @@ const SideBarLinkItems = [
     icon: FiHome 
   },
   { 
-    name: 'Product',
-    path:'productpage',
+    name: 'Trending',
+    path:'trending',
     icon: FiTrendingUp
   },
   { 
@@ -61,7 +62,7 @@ const SideBarLinkItems = [
   },
 ];
 
-export default function SidebarWithHeader(){
+export default function ProductPage(){
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box minH="100vh" bg={useColorModeValue('gray.100', 'gray.900')}>
@@ -88,13 +89,12 @@ export default function SidebarWithHeader(){
       {/*main data component*/}
       <Box ml={{ base: 0, md: 60 }} p="4">
         {/*main data part */}
-        <Homepage/>
+        <MyProductPage/>
       </Box>
     </Box>
   );
 }
   
-
 interface SidebarProps extends BoxProps {
   onClose: () => void;
 }

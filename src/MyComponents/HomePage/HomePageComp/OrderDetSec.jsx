@@ -2,8 +2,8 @@ import React from "react";
 
 const OrdersetSec = () => {
   return (
-    <table class="table align-middle mb-0 bg-white">
-    <thead class="bg-light">
+    <table className="table align-middle mb-0 bg-white">
+    <thead className="bg-light">
       <tr>
         <th>Name</th>
         <th>Title</th>
@@ -15,54 +15,54 @@ const OrdersetSec = () => {
     <tbody>
       <tr>
         <td>
-          <div class="d-flex align-items-center">
+          <div className="d-flex align-items-center">
             <img
                 src="https://mdbootstrap.com/img/new/avatars/8.jpg"
                 alt=""
                 style={{width:'45px', height:'45px'}}
-                class="rounded-circle"
+                className="rounded-circle"
                 />
-            <div class="ms-3">
-              <p class="fw-bold mb-1">John Doe</p>
-              <p class="text-muted mb-0">john.doe@gmail.com</p>
+            <div className="ms-3">
+              <p className="fw-bold mb-1">John Doe</p>
+              <p className="text-muted mb-0">john.doe@gmail.com</p>
             </div>
           </div>
         </td>
         <td>
-          <p class="fw-normal mb-1">Software engineer</p>
-          <p class="text-muted mb-0">IT department</p>
+          <p className="fw-normal mb-1">Software engineer</p>
+          <p className="text-muted mb-0">IT department</p>
         </td>
         <td>
-          <span class="badge badge-success rounded-pill d-inline">Active</span>
+          <span className="badge badge-success rounded-pill d-inline">Active</span>
         </td>
         <td>Senior</td>
         <td>
-          <button type="button" class="btn btn-link btn-sm btn-rounded">
+          <button type="button" className="btn btn-link btn-sm btn-rounded">
             Edit
           </button>
         </td>
       </tr>
       <tr>
         <td>
-          <div class="d-flex align-items-center">
+          <div className="d-flex align-items-center">
             <img
                 src="https://mdbootstrap.com/img/new/avatars/6.jpg"
-                class="rounded-circle"
+                className="rounded-circle"
                 alt=""
                 style={{width:'45px', height:'45px'}}
                 />
-            <div class="ms-3">
-              <p class="fw-bold mb-1">Alex Ray</p>
-              <p class="text-muted mb-0">alex.ray@gmail.com</p>
+            <div className="ms-3">
+              <p className="fw-bold mb-1">Alex Ray</p>
+              <p className="text-muted mb-0">alex.ray@gmail.com</p>
             </div>
           </div>
         </td>
         <td>
-          <p class="fw-normal mb-1">Consultant</p>
-          <p class="text-muted mb-0">Finance</p>
+          <p className="fw-normal mb-1">Consultant</p>
+          <p className="text-muted mb-0">Finance</p>
         </td>
         <td>
-          <span class="badge badge-primary rounded-pill d-inline"
+          <span className="badge badge-primary rounded-pill d-inline"
                 >Onboarding</span
             >
         </td>
@@ -70,7 +70,7 @@ const OrdersetSec = () => {
         <td>
           <button
                   type="button"
-                  class="btn btn-link btn-rounded btn-sm fw-bold"
+                  className="btn btn-link btn-rounded btn-sm fw-bold"
                   data-mdb-ripple-color="dark"
                   >
             Edit
@@ -79,31 +79,31 @@ const OrdersetSec = () => {
       </tr>
       <tr>
         <td>
-          <div class="d-flex align-items-center">
+          <div className="d-flex align-items-center">
             <img
                 src="https://mdbootstrap.com/img/new/avatars/7.jpg"
-                class="rounded-circle"
+                className="rounded-circle"
                 alt=""
                 style={{width:'45px', height:'45px'}}
                 />
-            <div class="ms-3">
-              <p class="fw-bold mb-1">Kate Hunington</p>
-              <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+            <div className="ms-3">
+              <p className="fw-bold mb-1">Kate Hunington</p>
+              <p className="text-muted mb-0">kate.hunington@gmail.com</p>
             </div>
           </div>
         </td>
         <td>
-          <p class="fw-normal mb-1">Designer</p>
-          <p class="text-muted mb-0">UI/UX</p>
+          <p className="fw-normal mb-1">Designer</p>
+          <p className="text-muted mb-0">UI/UX</p>
         </td>
         <td>
-          <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
+          <span className="badge badge-warning rounded-pill d-inline">Awaiting</span>
         </td>
         <td>Senior</td>
         <td>
           <button
                   type="button"
-                  class="btn btn-link btn-rounded btn-sm fw-bold"
+                  className="btn btn-link btn-rounded btn-sm fw-bold"
                   data-mdb-ripple-color="dark"
                   >
             Edit
