@@ -59,6 +59,21 @@ const SideBarLinkItems = [
     name: 'Settings',
     icon: FiSettings 
   },
+  { 
+    name: 'Calender',
+    path:"calender",
+    icon: FiSettings 
+  },
+  { 
+    name: 'Messages',
+    path:"messages",
+    icon: FiSettings 
+  },
+  { 
+    name: 'Notifications',
+    path:"notification",
+    icon: FiSettings 
+  },
 ];
 
 export default function SidebarWithHeader(){

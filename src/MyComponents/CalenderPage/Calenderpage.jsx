@@ -33,7 +33,6 @@ import {
 } from 'react-icons/fi';
 import { IconType } from 'react-icons';
 import { Link } from 'react-router-dom';
-import MyProductPage from './productpage';
 
 
 const SideBarLinkItems = [
@@ -58,7 +57,7 @@ const SideBarLinkItems = [
   },
   { 
     name: 'Settings',
-    path:'settings',
+    path:"settings",
     icon: FiSettings 
   },
   { 
@@ -78,7 +77,7 @@ const SideBarLinkItems = [
   },
 ];
 
-export default function ProductPage(){
+export default function CalenderPage(){
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box minH="100vh" bg={useColorModeValue('gray.100', 'gray.900')}>
@@ -105,7 +104,7 @@ export default function ProductPage(){
       {/*main data component*/}
       <Box ml={{ base: 0, md: 60 }} p="4">
         {/*main data part */}
-        <MyProductPage/>
+        
       </Box>
     </Box>
   );
